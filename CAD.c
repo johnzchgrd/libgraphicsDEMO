@@ -389,7 +389,7 @@ void MouseEventProcess(int x, int y, int button, int event)
          	PickNearestNode(list, mx, my);/*选择对象*/ 
          	switch (curList) {
          	  	case LINE:
-         	  		curLine->isSelected = TRUE;
+         	  		curLine->isSelected = TRUE;//出错在此，第一次执行未赋初值
          	  		curLine->color = CopyString("GREEN");
          	  		break;
          	  	case RECT:
